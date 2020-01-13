@@ -28,13 +28,13 @@ function App() {
     <div className="App">
       <Dashboard />
       <div className="row" style={{ padding: "1%" }}>
-        <div className="col-lg-4"><BentGant /></div>
+        <div className="col-lg-4"><Map /></div>
         <div className="col-lg-4"><TimeLinePie /></div>
         <div className="col-lg-4"><Draggable /></div>
       </div>
       <div className="row" style={{ padding: "1%" }} >
         <div className="col-lg-5">
-          <div className="row" style={{marginTop: "-14px"}}>
+          <div className="row" style={{ marginTop: "-14px" }}>
             <div className="col-lg-12"><BarChart /></div>
             <div className="col-lg-12"><RangeChart /></div>
           </div>

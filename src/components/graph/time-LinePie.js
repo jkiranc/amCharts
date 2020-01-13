@@ -114,8 +114,8 @@ export default class TimeLinePie extends Component {
 
         // Add data
         chart.data = [
+                { "month": "NOV" },
             { "sector": "Sandbox", "size": 6.6 },
-            { "sector": "Testing", "size": 0.6 },
             { "sector": "Support", "size": 23.2 },
             { "sector": "Stack", "size": 4.5 },
             { "sector": "Testing", "size": 14.6 },
