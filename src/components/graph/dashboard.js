@@ -50,7 +50,7 @@ export default function dashboard() {
                                     <div className="icon icon-shape bg-gradient-green text-white rounded-circle shadow"><i className="ni ni-money-coins" /></div>
                                 </div>
                             </div>
-                            <p className="mt-3 mb-0 text-sm" style={{ fontSize: "1.4rem!important" }}><span className="text-success mr-2"><FaArrowDown /> 1.22%</span> <span className="text-nowrap" style={{ marginLeft: "9%" }}>Since last month</span></p>
+                            <p className="mt-3 mb-0 text-sm" style={{ fontSize: "1.4rem!important" }}><span className="text-success mr-2"><FaArrowUp /> 1.22%</span> <span className="text-nowrap" style={{ marginLeft: "9%" }}>Since last month</span></p>
                         </div>
                     </div>
                 </div>
@@ -66,7 +66,7 @@ export default function dashboard() {
                                     <div className="icon icon-shape bg-gradient-primary text-white rounded-circle shadow"><i className="ni ni-chart-bar-32" /></div>
                                 </div>
                             </div>
-                            <p className="mt-3 mb-0 text-sm" style={{ fontSize: "1.4rem!important" }}><span className="text-success mr-2"><FaArrowDown /> 5.36%</span> <span className="text-nowrap" style={{ marginLeft: "9%" }}>Since last month</span></p>
+                            <p className="mt-3 mb-0 text-sm" style={{ fontSize: "1.4rem!important" }}><span className="text-success mr-2"><FaArrowUp /> 5.36%</span> <span className="text-nowrap" style={{ marginLeft: "9%" }}>Since last month</span></p>
                         </div>
                     </div>
                 </div>
