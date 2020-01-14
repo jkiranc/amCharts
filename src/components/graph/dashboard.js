@@ -42,7 +42,7 @@ export default function dashboard() {
                                     <h5 className="text-uppercase text-muted mb-0 card-title">Total Instances</h5>
                                     <span className="h2 font-weight-bold mb-0">11,634</span>
                                 </div>
-                                <div><OneTrend></OneTrend></div>
+                                {/* <div><OneTrend></OneTrend></div> */}
                                 <div className="col-auto col">
                                     <div className="icon icon-shape bg-gradient-red text-white rounded-circle shadow"><i className="ni ni-active-40" /></div>
                                 </div>

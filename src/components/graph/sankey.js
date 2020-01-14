@@ -14,45 +14,45 @@ export default class Sankey extends Component {
 
         chart.data = [
             // these are just for color, as properties are taken from data object where the name is first mentioned.
-            { from: "Cash in the U.S.", color: "#f47b20" },
+            { from: "Cash in the U.S.", color: "#48addf" },
             { from: "Cash Overseas", color: "#000000" },
 
-            { from: "Source", to: "Total non financial companies", value: 1768, color: "#f47b20", labelText: "[font-size:1.5em]2020 AZURE ENTERPRISE\nAGREEMENT COMMIT\n\n[/]ABC PVT LTD \n [bold]$1,768 Trillion[/b]", zIndex: 100 },
+            { from: "Source", to: "Total non financial companies", value: 1768, color: "#48addf", labelText: "[font-size:1.1em][bold]2020 AZURE ENTERPRISE\nAGREEMENT COMMIT\n\n[/]ABC PVT LTD \n [bold]$1,768 Trillion[/b]", zIndex: 100 },
 
-            { from: "Total non financial companies", to: "Non-tech companies", value: 907, color: "#f47b20", labelText: "STORAGE\n [bold]$907 Billion[/]" },
-            { from: "Total non financial companies", to: "Tech companies", value: 861, color: "#f47b20", labelText: "VIRTUAL MACHINE\n [bold]861 Billion[/]" },
+            { from: "Total non financial companies", to: "Non-tech companies", value: 907, color: "#48addf", labelText: "STORAGE\n [bold]$907 Billion[/]" },
+            { from: "Total non financial companies", to: "Tech companies", value: 861, color: "#48addf", labelText: "VIRTUAL MACHINE\n [bold]861 Billion[/]" },
 
-            { from: "Non-tech companies", to: "Cash in the U.S.", value: 324, color: "#f47b20", zIndex: 101 },
-            { from: "Non-tech companies", to: "Cash Overseas", value: 584, color: "#f47b20" },
+            { from: "Non-tech companies", to: "Cash in the U.S.", value: 324, color: "#48addf", zIndex: 101 },
+            { from: "Non-tech companies", to: "Cash Overseas", value: 584, color: "#48addf" },
 
-            { from: "Tech companies", to: "Rest of tech", value: 274, color: "#f47b20", labelText: "COMPUTE\n[bold]$274 Billion[/]" },
-            { from: "Tech companies", to: "Top 5 tech companies", value: 587, color: "#f47b20", labelText: "NETWORKING\n[bold]$587 Billion[/]" },
+            { from: "Tech companies", to: "Rest of tech", value: 274, color: "#48addf", labelText: "COMPUTE\n[bold]$274 Billion[/]" },
+            { from: "Tech companies", to: "Top 5 tech companies", value: 587, color: "#48addf", labelText: "NETWORKING\n[bold]$587 Billion[/]" },
 
-            { from: "Rest of tech", to: "Cash in the U.S.", value: 74, color: "#f47b20", zIndex: 100 },
-            { from: "Rest of tech", to: "Cash Overseas", value: 200, color: "#f47b20" },
+            { from: "Rest of tech", to: "Cash in the U.S.", value: 74, color: "#48addf", zIndex: 100 },
+            { from: "Rest of tech", to: "Cash Overseas", value: 200, color: "#48addf" },
 
-            { from: "Top 5 tech companies", to: "Joytechs", value: 67, color: "#f47b20" },
-            { from: "Joytechs", to: "Cash in the U.S.", value: 10, color: "#f47b20" },
-            { from: "Joytechs", to: "Cash Overseas", value: 57, color: "#f47b20", labelText: "JOYTECHS [bold]$67[/]B", labelLocation: 0, labelRotation: 0 },
+            { from: "Top 5 tech companies", to: "Joytechs", value: 67, color: "#48addf" },
+            { from: "Joytechs", to: "Cash in the U.S.", value: 10, color: "#48addf" },
+            { from: "Joytechs", to: "Cash Overseas", value: 57, color: "#48addf", labelText: "JOYTECHS [bold]$67[/]B", labelLocation: 0, labelRotation: 0 },
 
-            { from: "Top 5 tech companies", to: "Fireex", value: 68, color: "#f47b20" },
-            { from: "Fireex", to: "Cash in the U.S.", value: 8, color: "#f47b20" },
-            { from: "Fireex", to: "Cash Overseas", value: 60, color: "#f47b20", labelText: "FIREEX [bold]$68[/]B", labelLocation: 0, labelRotation: 0 },
+            { from: "Top 5 tech companies", to: "Fireex", value: 68, color: "#48addf" },
+            { from: "Fireex", to: "Cash in the U.S.", value: 8, color: "#48addf" },
+            { from: "Fireex", to: "Cash Overseas", value: 60, color: "#48addf", labelText: "FIREEX [bold]$68[/]B", labelLocation: 0, labelRotation: 0 },
 
-            { from: "Top 5 tech companies", to: "Globalworld", value: 85, color: "#f47b20" },
-            { from: "Globalworld", to: "Cash in the U.S.", value: 10, color: "#f47b20" },
-            { from: "Globalworld", to: "Cash Overseas", value: 75, color: "#f47b20", labelText: "GLOBALWORLD [bold]$85[/]B", labelLocation: 0, labelRotation: 0 },
+            { from: "Top 5 tech companies", to: "Globalworld", value: 85, color: "#48addf" },
+            { from: "Globalworld", to: "Cash in the U.S.", value: 10, color: "#48addf" },
+            { from: "Globalworld", to: "Cash Overseas", value: 75, color: "#48addf", labelText: "GLOBALWORLD [bold]$85[/]B", labelLocation: 0, labelRotation: 0 },
 
-            { from: "Top 5 tech companies", to: "Betagate", value: 115, color: "#f47b20" },
-            { from: "Betagate", to: "Cash in the U.S.", value: 10, color: "#f47b20" },
-            { from: "Betagate", to: "Cash Overseas", value: 105, color: "#f47b20", labelText: "BETAGATE [bold]$115[/]B", labelLocation: 0, labelRotation: 0 },
+            { from: "Top 5 tech companies", to: "Betagate", value: 115, color: "#48addf" },
+            { from: "Betagate", to: "Cash in the U.S.", value: 10, color: "#48addf" },
+            { from: "Betagate", to: "Cash Overseas", value: 105, color: "#48addf", labelText: "BETAGATE [bold]$115[/]B", labelLocation: 0, labelRotation: 0 },
 
-            { from: "Top 5 tech companies", to: "Apexi", value: 253, color: "#f47b20" },
-            { from: "Apexi", to: "Cash in the U.S.", value: 23, color: "#f47b20" },
-            { from: "Apexi", to: "Cash Overseas", value: 230, color: "#f47b20", labelText: "APEXI [bold]$253[/]B", labelLocation: 0, labelRotation: 0 },
+            { from: "Top 5 tech companies", to: "Apexi", value: 253, color: "#48addf" },
+            { from: "Apexi", to: "Cash in the U.S.", value: 23, color: "#48addf" },
+            { from: "Apexi", to: "Cash Overseas", value: 230, color: "#48addf", labelText: "APEXI [bold]$253[/]B", labelLocation: 0, labelRotation: 0 },
 
-            { from: "Cash in the U.S.", color: "#f47b20", labelRotation: -90, labelText: "CASH IN THE U.S.\n[bold]$460 BILLION", labelLocation: 0, value: 460, zIndex: 102 },
-            { from: "Cash Overseas", color: "#000000", labelText: "[#f47b20 font-size:1.3em]CASH OVERSEAS\n[bold #f47b20 font-size:1.3em]$1,31 TRILLION", labelLocation: 0, labelRotation: -90, value: 1310 }
+            { from: "Cash in the U.S.", color: "#48addf", labelRotation: -90, labelText: "CASH IN THE U.S.\n[bold]$460 BILLION", labelLocation: 0, value: 460, zIndex: 102 },
+            { from: "Cash Overseas", color: "#000000", labelText: "[#48addf font-size:1.3em]CASH OVERSEAS\n[bold #48addf font-size:1.3em]$1,31 TRILLION", labelLocation: 0, labelRotation: -90, value: 1310 }
         ];
 
         chart.paddingRight = 30;

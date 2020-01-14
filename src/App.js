@@ -41,11 +41,12 @@ function App() {
         </div>
         <div className="col-lg-7">
           <div className="row">
-            <div className="col-lg-6"><TimeLinePie /></div>
-            <div className="col-lg-6"><Draggable /></div>
+            <div className="col-lg-12"><TimeLinePie /></div>
+            <div className="col-lg-12"><Draggable /></div>
           </div>
         </div>
       </div>
+      <DynamicChart />
       {/*    */}
       {/* <div style={{ display: 'flex', justifyContent: 'space-around' }}>
         <Draggable />
