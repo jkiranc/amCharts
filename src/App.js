@@ -13,6 +13,7 @@ import Sankey from './components/graph/sankey';
 import TimeLinePie from './components/graph/time-LinePie';
 import Map from './components/graph/map';
 import RangeChart from './components/graph/rangeChart';
+import DynamicChart from './components/graph/dynamic';
 
 import Dashboard from './components/graph/dashboard';
 import logo from './logo.svg';
@@ -29,8 +30,7 @@ function App() {
       <Dashboard />
       <div className="row" style={{ padding: "1%" }}>
         <div className="col-lg-4"><Map /></div>
-        <div className="col-lg-4"><TimeLinePie /></div>
-        <div className="col-lg-4"><Draggable /></div>
+        <div className="col-lg-8"><Sankey /></div>
       </div>
       <div className="row" style={{ padding: "1%" }} >
         <div className="col-lg-5">
@@ -39,8 +39,14 @@ function App() {
             <div className="col-lg-12"><RangeChart /></div>
           </div>
         </div>
-        <div className="col-lg-7"><Sankey /></div>
+        <div className="col-lg-7">
+          <div className="row">
+            <div className="col-lg-6"><TimeLinePie /></div>
+            <div className="col-lg-6"><Draggable /></div>
+          </div>
+        </div>
       </div>
+      {/*    */}
       {/* <div style={{ display: 'flex', justifyContent: 'space-around' }}>
         <Draggable />
         <SemiPie />

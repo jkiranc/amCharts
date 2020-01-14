@@ -114,7 +114,7 @@ export default class TimeLinePie extends Component {
 
         // Add data
         chart.data = [
-                { "month": "NOV" },
+            { "month": "NOV" },
             { "sector": "Sandbox", "size": 6.6 },
             { "sector": "Support", "size": 23.2 },
             { "sector": "Stack", "size": 4.5 },
@@ -171,7 +171,7 @@ export default class TimeLinePie extends Component {
 
     render() {
         return (
-            <div id="timelinepie" style={{ width: '100%', height: "330px", backgroundColor: "white", boxShadow: "0px 0px 5px 5px rgba(0, 0, 0, 0.1)" }}>
+            <div id="timelinepie" style={{ width: '100%', height: "550px", backgroundColor: "white", boxShadow: "0px 0px 5px 5px rgba(0, 0, 0, 0.1)" }}>
             </div>
         )
     }

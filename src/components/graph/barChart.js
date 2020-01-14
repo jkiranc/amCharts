@@ -52,6 +52,52 @@ export default class BarChart extends Component {
       "visits": 3408
     }];
 
+    // chart.data = setInterval(function () {
+    //   var objectNew = [{
+    //     "country": "Feb 19",
+    //     "visits": 2795
+    //   }, {
+    //     "country": "Mar 19",
+    //     "visits": 2877
+    //   }, {
+    //     "country": "Apr 19",
+    //     "visits": 2886
+    //   }, {
+    //     "country": "May 19",
+    //     "visits": 2898
+    //   }, {
+    //     "country": "Jun 19",
+    //     "visits": 2987
+    //   }, {
+    //     "country": "July 19",
+    //     "visits": 3087
+    //   }, {
+    //     "country": "Aug 19",
+    //     "visits": 3189
+    //   }, {
+    //     "country": "Sept 19",
+    //     "visits": 3223
+    //   }, {
+    //     "country": "Oct 19",
+    //     "visits": 3278
+    //   }, {
+    //     "country": "Nov 19",
+    //     "visits": 3323
+    //   }, {
+    //     "country": "Dec 19",
+    //     "visits": 3389
+    //   }, {
+    //     "country": "Jan 20",
+    //     "visits": 3408
+    //   }];
+    //   var change = objectNew.shift();
+    //   console.log(objectNew);
+    //   console.log(change);
+    //   objectNew.push(change);
+    //   console.log(objectNew)
+    //   return objectNew;
+    // }, 5000);
+
     // Create axes
     var categoryAxis = chart.xAxes.push(new am4charts.CategoryAxis());
     categoryAxis.dataFields.category = "country";

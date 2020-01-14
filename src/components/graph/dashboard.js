@@ -1,5 +1,33 @@
 import React from 'react';
 import { FaArrowUp, FaArrowDown } from "react-icons/fa";
+import Trend from 'react-trend';
+
+const OneTrend = () => {
+    var variable = true;
+    var value = [0, 2, 5, 9, 5, 10, 3, 5, 0, 0, 1, 8, 2, 9, 0];
+    // let value = [0, 2, 5, 9, 5, 10, 3, 5, 0, 0, 1, 8, 2, 9, 0]
+    let DataNew = setInterval(() => {
+        value.shift();
+        console.log(value.push(Math.floor(Math.random() * 11)));
+        console.log(value);
+        return value;
+    }, 5000);
+    console.log(DataNew);
+    return (
+        <Trend
+            smooth
+            autoDraw
+            autoDrawDuration={3000}
+            autoDrawEasing="ease-out"
+            data={value}
+            gradient={['#00c6ff', '#F0F', '#FF0']}
+            radius={10}
+            strokeWidth={2}
+            strokeLinecap={'butt'}
+        />
+    );
+};
+
 
 
 export default function dashboard() {
@@ -14,6 +42,7 @@ export default function dashboard() {
                                     <h5 className="text-uppercase text-muted mb-0 card-title">Total Instances</h5>
                                     <span className="h2 font-weight-bold mb-0">11,634</span>
                                 </div>
+                                <div><OneTrend></OneTrend></div>
                                 <div className="col-auto col">
                                     <div className="icon icon-shape bg-gradient-red text-white rounded-circle shadow"><i className="ni ni-active-40" /></div>
                                 </div>

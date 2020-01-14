@@ -3,9 +3,9 @@ import * as am4core from "@amcharts/amcharts4/core";
 import * as am4maps from "@amcharts/amcharts4/maps";
 import am4geodata_worldHigh from "@amcharts/amcharts4-geodata/worldHigh";
 import am4themes_animated from "@amcharts/amcharts4/themes/animated";
+import './maps.css';
 
 am4core.useTheme(am4themes_animated);
-
 
 export default class Maps extends Component {
 
@@ -25,7 +25,7 @@ export default class Maps extends Component {
         chart.projection = new am4maps.projections.Mercator();
         chart.padding(10, 20, 10, 20);
         chart.minZoomLevel = 0.9;
-        chart.zoomLevel = 0.9;
+        chart.zoomLevel = 0.5;
         chart.maxZoomLevel = 1;
 
         let polygonSeries = chart.series.push(new am4maps.MapPolygonSeries());
@@ -118,8 +118,7 @@ export default class Maps extends Component {
     render() {
         return (
             <>
-                <div id="mapsdiv" style={{ width: '100%', height: "330px", backgroundColor: "white", boxShadow: "0px 0px 5px 5px rgba(0, 0, 0, 0.2)" }}>
-                </div>
+                <div id="mapsdiv"></div>
                 <div id="hiddenchartdiv" ></div>
             </>
         )
