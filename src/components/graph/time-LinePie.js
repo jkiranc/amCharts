@@ -154,7 +154,7 @@ export default class TimeLinePie extends Component {
                 chart.data[i].size = data[i].size;
             }
             chart.invalidateRawData();
-            chart.setTimeout(loop, 4000);
+            chart.setTimeout(loop, 2000);
         }
 
         loop();
