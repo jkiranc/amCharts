@@ -257,7 +257,7 @@ export default class DraggablePie extends Component {
         return (
             <>
                 {/* <h3 className="chartName" styl={{ background: "white" }}>Cost distribution by Service</h3> */}
-                <div id="chartdiv" style={{ width: '100%', height: "410px", marginTop: "1%", backgroundColor: "white", boxShadow: "0px 0px 5px 5px rgba(0, 0, 0, 0.1)" }}>
+                <div id="chartdiv" style={{ width: '100%', height: "410px", marginTop: "-1%", backgroundColor: "white", boxShadow: "0px 0px 5px 5px rgba(0, 0, 0, 0.1)" }}>
                 </div>
             </>
         )

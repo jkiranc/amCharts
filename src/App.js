@@ -28,24 +28,26 @@ function App() {
   return (
     <div className="App">
       {/* <Dashboard /> */}
-      <div className="row" style={{ padding: "1%" }}>
-        <div className="col-lg-4"><Map /></div>
-        <div className="col-lg-8"><Sankey /></div>
-      </div>
-      <div className="row" style={{ padding: "1%" }} >
+      <div className="row" style={{ padding: "1%", paddingTop: "2%" }} >
         <div className="col-lg-5">
           <div className="row" style={{ marginTop: "-5%" }}>
-            <div className="col-lg-12"><BarChart /></div>
-            <div className="col-lg-12"><RangeChart /></div>
             <div className="col-lg-12"><DynamicChart /></div>
+            <div className="col-lg-12"><RangeChart /></div>
+            <div className="col-lg-12"><BarChart /></div>
           </div>
         </div>
         <div className="col-lg-7">
           <div className="row" style={{ marginTop: "-2%" }}>
             <div className="col-lg-12"><TimeLinePie /></div>
-            <div className="col-lg-12"><Draggable /></div>
+            <div className="col-lg-12"><Sankey /></div>
           </div>
         </div>
+      </div>
+
+
+      <div className="row" style={{ padding: "1%" }}>
+        <div className="col-lg-4"><Map /></div>
+        <div className="col-lg-8"><Draggable /></div>
       </div>
 
       {/*    */}
