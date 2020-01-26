@@ -14,6 +14,11 @@ import TimeLinePie from './components/graph/time-LinePie';
 import Map from './components/graph/map';
 import RangeChart from './components/graph/rangeChart';
 import DynamicChart from './components/graph/dynamic';
+import MemoryUsage from './components/graph/memoryUsage';
+import NetworkActivity from './components/graph/NetworkActivity';
+import DiskUsage from './components/graph/diskActivity';
+import LiveNetworkActivity from './components/graph/LiveNetworkActivity';
+
 
 import Dashboard from './components/graph/dashboard';
 import logo from './logo.svg';
@@ -27,8 +32,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      {/* <Dashboard /> */}
-      <div className="row" style={{ padding: "1%", paddingTop: "2%" }} >
+      {/* <div className="row" style={{ padding: "1%", paddingTop: "2%" }} >
         <div className="col-lg-5">
           <div className="row" style={{ marginTop: "-5%" }}>
             <div className="col-lg-12"><DynamicChart /></div>
@@ -42,12 +46,16 @@ function App() {
             <div className="col-lg-12"><Sankey /></div>
           </div>
         </div>
-      </div>
+      </div> */}
 
 
       <div className="row" style={{ padding: "1%" }}>
-        <div className="col-lg-4"><Map /></div>
-        <div className="col-lg-8"><Draggable /></div>
+        {/* <div className="col-lg-4"><Map /></div>
+        <div className="col-lg-8"><Draggable /></div> */}
+        <div className="col-lg-6"><MemoryUsage /></div>
+        <div className="col-lg-6"><NetworkActivity /></div>
+        <div className="col-lg-6"><DiskUsage /></div>
+        <div className="col-lg-6"><LiveNetworkActivity /></div>
       </div>
 
       {/*    */}

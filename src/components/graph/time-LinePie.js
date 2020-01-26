@@ -156,11 +156,7 @@ export default class TimeLinePie extends Component {
             chart.invalidateRawData();
             chart.setTimeout(loop, 2000);
         }
-
         loop();
-
-
-
     }
 
     componentWillUnmount() {
