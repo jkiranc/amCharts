@@ -33,7 +33,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      {/* <div className="row" style={{ padding: "1%", paddingTop: "2%" }} >
+      <div className="row" style={{ padding: "1%", paddingTop: "2%" }} >
         <div className="col-lg-5">
           <div className="row" style={{ marginTop: "-5%" }}>
             <div className="col-lg-12"><DynamicChart /></div>
@@ -47,12 +47,12 @@ function App() {
             <div className="col-lg-12"><Sankey /></div>
           </div>
         </div>
-      </div> */}
+      </div>
 
 
       <div className="row" style={{ padding: "1%" }}>
-        {/* <div className="col-lg-4"><Map /></div>
-        <div className="col-lg-8"><Draggable /></div> */}
+        <div className="col-lg-4"><Map /></div>
+        <div className="col-lg-8"><Draggable /></div>
         <div className="col-lg-6"><MemoryUsage /></div>
         <div className="col-lg-6"><NetworkActivity /></div>
         <div className="col-lg-6"><DiskUsage /></div>
