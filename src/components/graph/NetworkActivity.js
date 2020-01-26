@@ -80,7 +80,7 @@ export default class Network extends Component {
             newData.push(dataAdd)
             chart.data = newData
             stopinterval();
-            console.log("im running")
+            // console.log("im running")
         }, 2000);
 
         function stopinterval() {

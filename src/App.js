@@ -18,6 +18,7 @@ import MemoryUsage from './components/graph/memoryUsage';
 import NetworkActivity from './components/graph/NetworkActivity';
 import DiskUsage from './components/graph/diskActivity';
 import LiveNetworkActivity from './components/graph/LiveNetworkActivity';
+import Canvas from './components/graph/CanvasJS';
 
 
 import Dashboard from './components/graph/dashboard';
@@ -56,6 +57,7 @@ function App() {
         <div className="col-lg-6"><NetworkActivity /></div>
         <div className="col-lg-6"><DiskUsage /></div>
         <div className="col-lg-6"><LiveNetworkActivity /></div>
+        <div className="col-lg-6"><Canvas /></div>
       </div>
 
       {/*    */}

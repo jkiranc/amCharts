@@ -23,7 +23,7 @@ export default class Network extends Component {
             data.push({ date: new Date(2020, 0, i), open: open, close: close });
         }
         var jsondata = data.slice(31, 290);
-        console.log(data);
+        // console.log(data);
         var initialData = data.slice(0, 30);
         chart.data = initialData
         var newData = initialData
@@ -37,7 +37,7 @@ export default class Network extends Component {
             newData.push(dataAdd)
             chart.data = newData;
             stopinterval();
-            console.log("im running")
+            // console.log("im running")
         }, 3000);
 
         function stopinterval() {
