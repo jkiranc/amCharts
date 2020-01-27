@@ -216,6 +216,12 @@ export default class Network extends Component {
             })
         })
 
+        chart.scrollbarX.background.fill = am4core.color("#ffffff");
+        chart.scrollbarX.thumb.background.fill = am4core.color("#ffffff");
+        chart.scrollbarX.startGrip.background.fill = am4core.color("#ffffff");
+        chart.scrollbarX.endGrip.background.fill = am4core.color("#ffffff");
+        chart.scrollbarX.stroke = am4core.color("#ffffff");
+
     }
 
     componentWillUnmount() {

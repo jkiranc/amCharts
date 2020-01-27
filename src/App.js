@@ -57,7 +57,7 @@ function App() {
         <div className="col-lg-6"><NetworkActivity /></div>
         <div className="col-lg-6"><DiskUsage /></div>
         <div className="col-lg-6"><LiveNetworkActivity /></div>
-        <div className="col-lg-6"><Canvas /></div>
+        <div className="col-lg-6" style={{ marginTop: "2%", boxShadow: "0px 0px 5px 5px rgba(0, 0, 0, 0.1)" }}><Canvas /></div>
       </div>
 
       {/*    */}

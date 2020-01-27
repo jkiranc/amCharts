@@ -143,6 +143,14 @@ export default class MemoryUsage extends Component {
         chart.scrollbarX.endGrip.disabled = true;
         // Cursor
         chart.cursor = new am4charts.XYCursor();
+        chart.scrollbarX.background.fill = am4core.color("#ffffff");
+
+
+        chart.scrollbarX.background.fill = am4core.color("#ffffff");
+        chart.scrollbarX.thumb.background.fill = am4core.color("#ffffff");
+        chart.scrollbarX.startGrip.background.fill = am4core.color("#ffffff");
+        chart.scrollbarX.endGrip.background.fill = am4core.color("#ffffff");
+        chart.scrollbarX.stroke = am4core.color("#ffffff");
 
 
     }
