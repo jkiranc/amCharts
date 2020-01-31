@@ -27,7 +27,12 @@ import logo from './logo.svg';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
 import './App.css';
-
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 
 
@@ -49,22 +54,74 @@ function App() {
           </div>
         </div>
       </div> */}
+      <Router>
+        <div>
+          <nav>
+            <ul>
+              <li>
+                <Link to="/cost">Cost</Link>
+              </li>
+              <li>
+                <Link to="/performance">Performance</Link>
+              </li>
+            </ul>
+          </nav>
+
+          {/* A <Switch> looks through its children <Route>s and
+            renders the first one that matches the current URL. */}
+          <Switch>
+            <Route path="/cost">
+              <Cost />
+            </Route>
+            <Route path="/performance">
+              <Performance />
+            </Route>
+          </Switch>
+        </div>
+      </Router>
 
 
-      <div className="row" style={{ padding: "1%" }}>
-        <div className="col-lg-4"><Map /></div>
-        <div className="col-lg-8"><TimeLinePie /></div>
-        <div className="col-lg-6" style={{ marginTop: "2%", boxShadow: "0px 0px 5px 5px rgba(0, 0, 0, 0.1)" }}><Canvas /></div>
-        <div className="col-lg-6" style={{ marginTop: "2%", boxShadow: "0px 0px 5px 5px rgba(0, 0, 0, 0.1)" }}><Canvas /></div>
-        <div className="col-lg-6"><LiveNetworkActivity /></div>
-        <div className="col-lg-6"><DiskActivityCanvas /></div>
-        {/* <div className="col-lg-6"><MemoryUsage /></div>
-        <div className="col-lg-6"><NetworkActivity /></div>
-        <div className="col-lg-6"><DiskUsage /></div> */}
-      </div>
 
     </div>
   );
 }
 
+
 export default App;
+
+function Cost() {
+  return (
+    <div className="row" style={{ padding: "1%", paddingTop: "2%" }} >
+      <div className="col-lg-5">
+        <div className="row" style={{ marginTop: "-5%" }}>
+          <div className="col-lg-12"><DynamicChart /></div>
+          <div className="col-lg-12"><RangeChart /></div>
+          <div className="col-lg-12"><BarChart /></div>
+        </div>
+      </div>
+      <div className="col-lg-7">
+        <div className="row" style={{ marginTop: "-2%" }}>
+          <div className="col-lg-12"><TimeLinePie /></div>
+          <div className="col-lg-12"><Sankey /></div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function Performance() {
+  return (
+    <div className="row" style={{ padding: "1%" }}>
+      <div className="col-lg-4"><Map /></div>
+      <div className="col-lg-8"><TimeLinePie /></div>
+      <div className="col-lg-6" style={{ marginTop: "2%", boxShadow: "0px 0px 5px 5px rgba(0, 0, 0, 0.1)" }}><Canvas /></div>
+      <div className="col-lg-6" style={{ marginTop: "2%", boxShadow: "0px 0px 5px 5px rgba(0, 0, 0, 0.1)" }}><Canvas /></div>
+      <div className="col-lg-6"><LiveNetworkActivity /></div>
+      <div className="col-lg-6"><DiskActivityCanvas /></div>
+      {/* <div className="col-lg-6"><MemoryUsage /></div>
+        <div className="col-lg-6"><NetworkActivity /></div>
+        <div className="col-lg-6"><DiskUsage /></div> */}
+    </div>
+
+  );
+}
