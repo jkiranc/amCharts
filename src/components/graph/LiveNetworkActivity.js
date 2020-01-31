@@ -87,7 +87,7 @@ export default class Network extends Component {
 
     render() {
         return (
-            <div id="livenetworkdiv" style={{ width: '100%', height: "160px", backgroundColor: "white", marginTop: "2%", boxShadow: "0px 0px 5px 5px rgba(0, 0, 0, 0.1)" }}>
+            <div id="livenetworkdiv" style={{ width: '100%', height: "320px", backgroundColor: "white", marginTop: "2%", boxShadow: "0px 0px 5px 5px rgba(0, 0, 0, 0.1)" }}>
             </div>
         )
     }

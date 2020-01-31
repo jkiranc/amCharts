@@ -88,6 +88,7 @@ class DiskActivityCanvas extends Component {
             data: [{
                 type: "line",
                 xValueType: "dateTime",
+                fillOpacity: .8,
                 yValueFormatString: "####",
                 xValueFormatString: "hh:mm:ss TT",
                 showInLegend: true,
