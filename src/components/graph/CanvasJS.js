@@ -28,7 +28,7 @@ class DynamicColumnChart extends Component {
     }
     render() {
         const options = {
-            theme: "light1",
+            theme: "light2",
             title: {
                 text: "CPU Usage"
             },

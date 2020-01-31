@@ -19,6 +19,7 @@ import NetworkActivity from './components/graph/NetworkActivity';
 import DiskUsage from './components/graph/diskActivity';
 import LiveNetworkActivity from './components/graph/LiveNetworkActivity';
 import Canvas from './components/graph/CanvasJS';
+import DiskActivityCanvas from './components/graph/DiskActivityCanvas';
 
 
 import Dashboard from './components/graph/dashboard';
@@ -33,7 +34,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <div className="row" style={{ padding: "1%", paddingTop: "2%" }} >
+      {/* <div className="row" style={{ padding: "1%", paddingTop: "2%" }} >
         <div className="col-lg-5">
           <div className="row" style={{ marginTop: "-5%" }}>
             <div className="col-lg-12"><DynamicChart /></div>
@@ -47,54 +48,21 @@ function App() {
             <div className="col-lg-12"><Sankey /></div>
           </div>
         </div>
-      </div>
+      </div> */}
 
 
       <div className="row" style={{ padding: "1%" }}>
         <div className="col-lg-4"><Map /></div>
-        <div className="col-lg-8"><Draggable /></div>
-        <div className="col-lg-6"><MemoryUsage /></div>
-        <div className="col-lg-6"><NetworkActivity /></div>
-        <div className="col-lg-6"><DiskUsage /></div>
-        <div className="col-lg-6"><LiveNetworkActivity /></div>
+        <div className="col-lg-8"><TimeLinePie /></div>
         <div className="col-lg-6" style={{ marginTop: "2%", boxShadow: "0px 0px 5px 5px rgba(0, 0, 0, 0.1)" }}><Canvas /></div>
+        <div className="col-lg-6" style={{ marginTop: "2%", boxShadow: "0px 0px 5px 5px rgba(0, 0, 0, 0.1)" }}><Canvas /></div>
+        <div className="col-lg-6"><LiveNetworkActivity /></div>
+        <div className="col-lg-6"><DiskActivityCanvas /></div>
+        {/* <div className="col-lg-6"><MemoryUsage /></div>
+        <div className="col-lg-6"><NetworkActivity /></div>
+        <div className="col-lg-6"><DiskUsage /></div> */}
       </div>
 
-      {/*    */}
-      {/* <div style={{ display: 'flex', justifyContent: 'space-around' }}>
-        <Draggable />
-        <SemiPie />
-        <TimeLinePie />
-      </div> */}
-      {/* <Draggable />
-      <div style={{ display: 'flex', justifyContent: 'space-around' }}>
-        <XYChart />
-        <BarChart />
-      </div>
-      <div style={{ display: 'flex', justifyContent: 'space-around' }}>
-        <ThreeDPie />
-        <BentGant />
-      </div>
-      <div style={{ display: 'flex', justifyContent: 'space-around' }}>
-        <DrillDownTreeMap />
-      </div>
-      <div style={{ display: 'flex', justifyContent: 'space-around' }}>
-        <Fishbone />
-      </div> */}
-      {/* <div style={{ display: 'flex', justifyContent: 'space-around' }}>
-        <Sankey />
-      </div>
-      <RangeChart /> */}
-      {/* <Map /> */}
-      {/* <SemiPie />
-      <XYChart />
-      <BarChart />
-      <ThreeDPie />
-      <BentGant />
-      <Fishbone />
-      <DrillDownTreeMap />
-      <Sankey /> */}
-      {/* <PieOfPie />  */}
     </div>
   );
 }
