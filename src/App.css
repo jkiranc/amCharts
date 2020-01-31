@@ -58,5 +58,24 @@
 }
 
 .text-success-red {
-    color: red!important;
+  color: red !important;
+}
+
+.alerticon {
+  width: 18%;
+  margin-top: 8%;
+  margin-left: 10%;
+}
+.wftheading {
+  margin-left: 15%;
+  margin-top: 1%;
+}
+
+.lableClass {
+  float: left;
+  margin-left: 9%;
+}
+
+.liClass {
+  width: 10%;
 }
