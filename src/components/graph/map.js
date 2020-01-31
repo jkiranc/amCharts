@@ -99,7 +99,10 @@ export default class Maps extends Component {
                         let animation = label.animate({ property: "y", to: 1000 }, 300);
 
                         animation.events.once("animationended", function () {
-                            label.text = morphToPolygon.dataItem.dataContext["name"];
+                            var textt = morphToPolygon.dataItem.dataContext["name"];
+                            var randomnum = function () { return Math.floor(Math.random() * 10) + 1 };
+                            textt = textt + " $" + randomnum() + "M";
+                            label.text = textt;
                             label.y = -50;
                             label.animate({ property: "y", to: 200 }, 300, am4core.ease.quadOut);
                         })
@@ -118,8 +121,8 @@ export default class Maps extends Component {
     render() {
         return (
             <>
-                <div id="mapsdiv" style={{ width: '100%', height: "410px", marginTop: "-2%", backgroundColor: "white", boxShadow: "0px 0px 5px 5px rgba(0, 0, 0, 0.1)" }}></div>
-                <div id="hiddenchartdiv" style={{ width: '100%', height: "410px", marginTop: "-2%", backgroundColor: "white", boxShadow: "0px 0px 5px 5px rgba(0, 0, 0, 0.1)" }}></div>
+                <div id="mapsdiv" style={{ width: '100%', height: "410px", backgroundColor: "white", boxShadow: "0px 0px 5px 5px rgba(0, 0, 0, 0.1)" }}></div>
+                <div id="hiddenchartdiv" style={{ width: '100%', height: "410px", backgroundColor: "white", boxShadow: "0px 0px 5px 5px rgba(0, 0, 0, 0.1)" }}></div>
             </>
         )
     }
