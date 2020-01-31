@@ -126,12 +126,8 @@ function Performance() {
           <div className="row" style={{ padding: "1%", margin: "0px" }}>
             <div className="col-lg-5"><MapTwo /></div>
             <div className="col-lg-7"><TimeLinePiee /></div>
-          </div>
-          <div className="row" style={{ padding: "1%", margin: "0px" }}>
             <div className="col-lg-6"><Canvas /></div>
             <div className="col-lg-6"><MemoryUsageCanvas /></div>
-          </div>
-          <div className="row" style={{ padding: "1%", margin: "0px" }}>
             <div className="col-lg-6"><LiveNetworkActivity /></div>
             <div className="col-lg-6"><DiskActivityCanvas /></div>
             {/* <div className="col-lg-6"><MemoryUsage /></div>

@@ -19,7 +19,7 @@ class DynamicColumnChart extends Component {
             deltaY = Math.round(2 + Math.random() * (-2 - 2));
             yVal = deltaY + dps[i].y > 0 ? (deltaY + dps[i].y < 100 ? dps[i].y + deltaY : 100) : 0;
             dpsColor = yVal >= 90 ? "#e40000" : yVal >= 70 ? "#ec7426" : yVal >= 50 ? "#81c2ea" : "#88df86 ";
-            dps[i] = { label: "CPU " + (i + 1), y: yVal, color: dpsColor };
+            dps[i] = { label: "VM " + (i + 1), y: yVal, color: dpsColor };
             dpsTotal += yVal;
         }
         this.chart.options.data[0].dataPoints = dps;
@@ -45,12 +45,16 @@ class DynamicColumnChart extends Component {
                 yValueFormatString: "#,###'%'",
                 indexLabel: "{y}",
                 dataPoints: [
-                    { label: "CPU 1", y: 68 },
-                    { label: "CPU 2", y: 3 },
-                    { label: "CPU 3", y: 8 },
-                    { label: "CPU 4", y: 87 },
-                    { label: "CPU 5", y: 2 },
-                    { label: "CPU 6", y: 6 }
+                    { label: "VM 1", y: 68 },
+                    { label: "VM 2", y: 31 },
+                    { label: "VM 3", y: 38 },
+                    { label: "VM 4", y: 87 },
+                    { label: "VM 5", y: 28 },
+                    { label: "VM 6", y: 62 },
+                    { label: "VM 7", y: 26 },
+                    { label: "VM 8", y: 78 },
+                    { label: "VM 9", y: 45 },
+                    { label: "VM 10", y: 81 }
                 ]
             }]
         }

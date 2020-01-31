@@ -19,24 +19,24 @@ class MemoryUsageCanvas extends Component {
             deltaY = Math.round(2 + Math.random() * (-2 - 2));
             yVal = deltaY + dps[i].y > 0 ? (deltaY + dps[i].y < 100 ? dps[i].y + deltaY : 100) : 0;
             dpsColor = yVal >= 90 ? "#e40000" : yVal >= 70 ? "#ec7426" : yVal >= 50 ? "#81c2ea" : "#88df86 ";
-            dps[i] = { label: "CPU " + (i + 1), y: yVal, color: dpsColor };
+            dps[i] = { label: "VM " + (i + 1), y: yVal, color: dpsColor };
             dpsTotal += yVal;
         }
         this.chart.options.data[0].dataPoints = dps;
-        this.chart.options.title.text = "CPU Usage " + Math.round(dpsTotal / 6) + "%";
+        this.chart.options.title.text = "Memory Usage " + Math.round(dpsTotal / 6) + "%";
         this.chart.render();
     }
     render() {
         const options = {
             theme: "light2",
             title: {
-                text: "CPU Usage"
+                text: "Memory Usage"
             },
             subtitles: [{
-                text: "Top 10 Vms by % CPU Usage"
+                text: "Top 10 Vms by % Memory Usage"
             }],
             axisY: {
-                title: "CPU Usage (%)",
+                title: "Memory Usage (%)",
                 suffix: "%",
                 maximum: 100
             },
@@ -45,12 +45,16 @@ class MemoryUsageCanvas extends Component {
                 yValueFormatString: "#,###'%'",
                 indexLabel: "{y}",
                 dataPoints: [
-                    { label: "CPU 1", y: 68 },
-                    { label: "CPU 2", y: 23 },
-                    { label: "CPU 3", y: 35 },
-                    { label: "CPU 4", y: 78 },
-                    { label: "CPU 5", y: 57 },
-                    { label: "CPU 6", y: 86 }
+                    { label: "VM 1", y: 68 },
+                    { label: "VM 2", y: 23 },
+                    { label: "VM 3", y: 35 },
+                    { label: "VM 4", y: 78 },
+                    { label: "VM 5", y: 57 },
+                    { label: "VM 6", y: 15 },
+                    { label: "VM 6", y: 78 },
+                    { label: "VM 6", y: 67 },
+                    { label: "VM 6", y: 71 },
+                    { label: "VM 6", y: 45 }
                 ]
             }]
         }
