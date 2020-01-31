@@ -100,7 +100,7 @@ export default class Maps extends Component {
 
                         animation.events.once("animationended", function () {
                             var textt = morphToPolygon.dataItem.dataContext["name"];
-                            var randomnum = function () { return Math.floor(Math.random() * 10) + 1 };
+                            var randomnum = function () { return Math.floor(Math.random() * 15) + 1 };
                             textt = textt + " $" + randomnum() + "M";
                             label.text = textt;
                             label.y = -50;
