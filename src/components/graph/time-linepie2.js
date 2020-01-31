@@ -13,99 +13,99 @@ export default class TimeLinePiee extends Component {
         var chartData = {
             "1995": [
                 { "month": "JAN" },
-                { "sector": "Prod", "size": 6.6 },
-                { "sector": "qas", "size": 23.2 },
-                { "sector": "stg", "size": 4.5 },
-                { "sector": "dev", "size": 14.6 },
-                { "sector": "sbx", "size": 9.3 }
+                { "sector": "PROD", "size": 6.6 },
+                { "sector": "QAS", "size": 23.2 },
+                { "sector": "STG", "size": 4.5 },
+                { "sector": "DEV", "size": 14.6 },
+                { "sector": "SBX", "size": 9.3 }
             ],
             "1996": [
                 { "month": "FEB" },
-                { "sector": "Prod", "size": 6.4 },
-                { "sector": "qas", "size": 22.4 },
-                { "sector": "stg", "size": 4.2 },
-                { "sector": "dev", "size": 14.8 },
-                { "sector": "sbx", "size": 9.7 }
+                { "sector": "PROD", "size": 6.4 },
+                { "sector": "QAS", "size": 22.4 },
+                { "sector": "STG", "size": 4.2 },
+                { "sector": "DEV", "size": 14.8 },
+                { "sector": "SBX", "size": 9.7 }
             ],
             "1997": [
                 { "month": "MARCH" },
-                { "sector": "Prod", "size": 6.1 },
-                { "sector": "qas", "size": 20.9 },
-                { "sector": "stg", "size": 4.2 },
-                { "sector": "dev", "size": 13.7 },
-                { "sector": "sbx", "size": 9.4 }
+                { "sector": "PROD", "size": 6.1 },
+                { "sector": "QAS", "size": 20.9 },
+                { "sector": "STG", "size": 4.2 },
+                { "sector": "DEV", "size": 13.7 },
+                { "sector": "SBX", "size": 9.4 }
             ],
             "1998": [
                 { "month": "APRIL" },
-                { "sector": "Prod", "size": 6.2 },
-                { "sector": "qas", "size": 21.4 },
-                { "sector": "stg", "size": 4.2 },
-                { "sector": "dev", "size": 14.5 },
-                { "sector": "sbx", "size": 10.6 }
+                { "sector": "PROD", "size": 6.2 },
+                { "sector": "QAS", "size": 21.4 },
+                { "sector": "STG", "size": 4.2 },
+                { "sector": "DEV", "size": 14.5 },
+                { "sector": "SBX", "size": 10.6 }
             ],
             "1999": [
                 { "month": "MAY" },
-                { "sector": "Prod", "size": 5.7 },
-                { "sector": "qas", "size": 20 },
-                { "sector": "stg", "size": 4.4 },
-                { "sector": "dev", "size": 15.2 },
-                { "sector": "sbx", "size": 10.5 }
+                { "sector": "PROD", "size": 5.7 },
+                { "sector": "QAS", "size": 20 },
+                { "sector": "STG", "size": 4.4 },
+                { "sector": "DEV", "size": 15.2 },
+                { "sector": "SBX", "size": 10.5 }
             ],
             "2000": [
                 { "month": "JUNE" },
-                { "sector": "Prod", "size": 5.1 },
-                { "sector": "qas", "size": 20.4 },
-                { "sector": "stg", "size": 4 },
-                { "sector": "dev", "size": 16.3 },
-                { "sector": "sbx", "size": 10.7 }
+                { "sector": "PROD", "size": 5.1 },
+                { "sector": "QAS", "size": 20.4 },
+                { "sector": "STG", "size": 4 },
+                { "sector": "DEV", "size": 16.3 },
+                { "sector": "SBX", "size": 10.7 }
             ],
             "2001": [
                 { "month": "JULY" },
-                { "sector": "Prod", "size": 5.5 },
-                { "sector": "qas", "size": 20.3 },
-                { "sector": "stg", "size": 3.1 },
-                { "sector": "dev", "size": 16.3 },
-                { "sector": "sbx", "size": 10.7 }
+                { "sector": "PROD", "size": 5.5 },
+                { "sector": "QAS", "size": 20.3 },
+                { "sector": "STG", "size": 3.1 },
+                { "sector": "DEV", "size": 16.3 },
+                { "sector": "SBX", "size": 10.7 }
             ],
             "2002": [
                 { "month": "AUG" },
-                { "sector": "Prod", "size": 5.7 },
-                { "sector": "qas", "size": 20.5 },
-                { "sector": "stg", "size": 3.6 },
-                { "sector": "dev", "size": 16.1 },
-                { "sector": "sbx", "size": 10.7 }
+                { "sector": "PROD", "size": 5.7 },
+                { "sector": "QAS", "size": 20.5 },
+                { "sector": "STG", "size": 3.6 },
+                { "sector": "DEV", "size": 16.1 },
+                { "sector": "SBX", "size": 10.7 }
             ],
             "2003": [
                 { "month": "SEP" },
-                { "sector": "Prod", "size": 4.9 },
-                { "sector": "qas", "size": 19.4 },
-                { "sector": "stg", "size": 3.3 },
-                { "sector": "dev", "size": 16.2 },
-                { "sector": "sbx", "size": 11 }
+                { "sector": "PROD", "size": 4.9 },
+                { "sector": "QAS", "size": 19.4 },
+                { "sector": "STG", "size": 3.3 },
+                { "sector": "DEV", "size": 16.2 },
+                { "sector": "SBX", "size": 11 }
             ],
             "2004": [
                 { "month": "OCT" },
-                { "sector": "Prod", "size": 4.7 },
-                { "sector": "qas", "size": 18.4 },
-                { "sector": "stg", "size": 3.3 },
-                { "sector": "dev", "size": 16.9 },
-                { "sector": "sbx", "size": 10.6 }
+                { "sector": "PROD", "size": 4.7 },
+                { "sector": "QAS", "size": 18.4 },
+                { "sector": "STG", "size": 3.3 },
+                { "sector": "DEV", "size": 16.9 },
+                { "sector": "SBX", "size": 10.6 }
             ],
             "2005": [
                 { "month": "NOV" },
-                { "sector": "Prod", "size": 4.3 },
-                { "sector": "qas", "size": 18.1 },
-                { "sector": "stg", "size": 3.9 },
-                { "sector": "dev", "size": 15.7 },
-                { "sector": "sbx", "size": 10.6 }
+                { "sector": "PROD", "size": 4.3 },
+                { "sector": "QAS", "size": 18.1 },
+                { "sector": "STG", "size": 3.9 },
+                { "sector": "DEV", "size": 15.7 },
+                { "sector": "SBX", "size": 10.6 }
             ],
             "2006": [
                 { "month": "DEC" },
-                { "sector": "Prod", "size": 4 },
-                { "sector": "qas", "size": 16.5 },
-                { "sector": "stg", "size": 3.7 },
-                { "sector": "dev", "size": 14.2 },
-                { "sector": "sbx", "size": 12.1 }
+                { "sector": "PROD", "size": 4 },
+                { "sector": "QAS", "size": 16.5 },
+                { "sector": "STG", "size": 3.7 },
+                { "sector": "DEV", "size": 14.2 },
+                { "sector": "SBX", "size": 12.1 }
             ]
         };
 
@@ -115,11 +115,11 @@ export default class TimeLinePiee extends Component {
         // Add data
         chart.data = [
             { "month": "NOV" },
-            { "sector": "Prod", "size": 6.6 },
-            { "sector": "qas", "size": 23.2 },
-            { "sector": "stg", "size": 4.5 },
-            { "sector": "dev", "size": 14.6 },
-            { "sector": "sbx", "size": 9.3 }
+            { "sector": "PROD", "size": 6.6 },
+            { "sector": "QAS", "size": 23.2 },
+            { "sector": "STG", "size": 4.5 },
+            { "sector": "DEV", "size": 14.6 },
+            { "sector": "SBX", "size": 9.3 }
         ];
 
         // Add label
@@ -166,7 +166,7 @@ export default class TimeLinePiee extends Component {
 
     render() {
         return (
-            <div id="timelinepie2" style={{ width: '100%', height: "410px", backgroundColor: "white", boxShadow: "0px 0px 5px 5px rgba(0, 0, 0, 0.1)" }}>
+            <div id="timelinepie2" style={{ width: '100%', height: "270px", backgroundColor: "white", boxShadow: "0px 0px 5px 5px rgba(0, 0, 0, 0.1)" }}>
             </div>
         )
     }

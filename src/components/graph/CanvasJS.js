@@ -59,7 +59,7 @@ class DynamicColumnChart extends Component {
             <div>
                 <CanvasJSChart options={options}
                     onRef={ref => this.chart = ref}
-                    style={{ width: '100%', height: "276px", backgroundColor: "white", marginTop: "2%", boxShadow: "0px 0px 5px 5px rgba(0, 0, 0, 0.1)" }} />
+                    style={{ width: '100%', height: "100px", backgroundColor: "white", marginTop: "2%", boxShadow: "0px 0px 5px 5px rgba(0, 0, 0, 0.1)" }} />
                 {/*You can get reference to the chart instance as shown above using onRef. This allows you to access all chart properties and methods*/}
             </div>
         );

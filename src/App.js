@@ -13,6 +13,7 @@ import Sankey from './components/graph/sankey';
 import TimeLinePie from './components/graph/time-LinePie';
 import TimeLinePiee from './components/graph/time-linepie2';
 import Map from './components/graph/map';
+import MapTwo from './components/graph/MapsTwo';
 import RangeChart from './components/graph/rangeChart';
 import DynamicChart from './components/graph/dynamic';
 import MemoryUsage from './components/graph/memoryUsage';
@@ -116,17 +117,21 @@ function Cost() {
 function Performance() {
   return (
     <div className="container1">
-      <div className="row">
-        <div className="col-lg-2">
+      <div className="row" style={{ margin: "0px" }}>
+        <div className="col-lg-2" style={{ paddingLeft: "0px" }}>
           <Sidebar />
         </div>
-        <div className="col-lg-10">
+        <div className="col-lg-10" style={{ padding: "0px" }}>
           <Navbar />
-          <div className="row" style={{ padding: "1%" }}>
-            <div className="col-lg-4"><Map /></div>
-            <div className="col-lg-8"><TimeLinePiee /></div>
+          <div className="row" style={{ padding: "1%", margin: "0px" }}>
+            <div className="col-lg-5"><MapTwo /></div>
+            <div className="col-lg-7"><TimeLinePiee /></div>
+          </div>
+          <div className="row" style={{ padding: "1%", margin: "0px" }}>
             <div className="col-lg-6"><Canvas /></div>
             <div className="col-lg-6"><MemoryUsageCanvas /></div>
+          </div>
+          <div className="row" style={{ padding: "1%", margin: "0px" }}>
             <div className="col-lg-6"><LiveNetworkActivity /></div>
             <div className="col-lg-6"><DiskActivityCanvas /></div>
             {/* <div className="col-lg-6"><MemoryUsage /></div>
@@ -142,17 +147,17 @@ function Performance() {
 
 function Sidebar() {
   return (
-    <div style={{ backgroundColor: "#244A90", height: "100vh", color: "white", width: "17.1%", position: "fixed" }}>
+    <div style={{ backgroundColor: "#244A90", height: "100vh", color: "white", width: "100%", position: "absolute" }}>
       <div className="logo">
         <img src={wftlogo} style={{ width: "100%" }}></img>
       </div>
       <div className="side-options">
         <div className="subscriptions">
-          <h5>SUBSCRIPTION</h5>
-          <p>WFT-SAP-EA</p>
+          <h5 style={{ textAlign: "left", marginLeft: "8%", marginTop: "-3%" }}>SUBSCRIPTION</h5>
+          <p style={{ textAlign: "left", marginLeft: "12%" }}>WFT-SAP-EA</p>
         </div>
         <div className="landscapes">
-          <h5>LANDSCAPES</h5>
+          <h5 style={{ textAlign: "left", marginLeft: "8%", marginTop: "-3%" }}>LANDSCAPES</h5>
           <ul>
             <li className="liClass">PROD</li>
             <li className="liClass">QAS</li>
@@ -162,7 +167,7 @@ function Sidebar() {
           </ul>
         </div>
         <div className="virtual-machines">
-          <h5>VIRTUAL MACHINES</h5>
+          <h5 style={{ textAlign: "left", marginLeft: "8%", marginTop: "-3%" }}>VIRTUAL MACHINES</h5>
           <div className="lableClass">
             <label>
               <input type="checkbox" />
@@ -213,11 +218,6 @@ function Sidebar() {
               <input type="checkbox" />
               <span>VM10</span>
             </label>
-            <br />
-            <label>
-              <input type="checkbox" />
-              <span>Red</span>
-            </label>
           </div>
         </div>
       </div>
@@ -227,12 +227,12 @@ function Sidebar() {
 
 function Navbar() {
   return (
-    <div style={{ backgroundColor: "#3c3c3c", height: "8vh", color: "white" }}>
-      <div className="row">
+    <div style={{ backgroundColor: "#3c3c3c", height: "6vh", color: "white" }}>
+      <div className="row" style={{ margin: "0px" }}>
         <div className="col-lg-10">
           <h3 className="wftheading">Wharfedale Cloud Analyzer</h3>
         </div>
-        <div className="col-lg-2">
+        <div className="col-lg-2" style={{ padding: "0px" }}>
           <div className="actions-notify">
             <img className="alerticon" src={alerticon}></img>
             <img className="alerticon" src={notificationicon}></img>
