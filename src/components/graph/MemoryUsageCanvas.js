@@ -43,6 +43,7 @@ class MemoryUsageCanvas extends Component {
             },
             data: [{
                 type: "column",
+                fillOpacity: .8,
                 yValueFormatString: "#,###'%'",
                 indexLabel: "{y}",
                 dataPoints: [
