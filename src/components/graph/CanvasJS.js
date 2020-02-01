@@ -30,7 +30,8 @@ class DynamicColumnChart extends Component {
         const options = {
             theme: "light2",
             title: {
-                text: "CPU Usage"
+                text: "CPU Usage",
+                fontSize: 12,
             },
             subtitles: [{
                 text: "Top 10 Vms by % CPU Usage"

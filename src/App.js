@@ -124,12 +124,12 @@ function Performance() {
         <div className="col-lg-10" style={{ padding: "0px" }}>
           <Navbar />
           <div className="row" style={{ padding: "1%", margin: "0px" }}>
-            <div className="col-lg-5"><MapTwo /></div>
-            <div className="col-lg-7"><TimeLinePiee /></div>
-            <div className="col-lg-6"><Canvas /></div>
-            <div className="col-lg-6"><MemoryUsageCanvas /></div>
-            <div className="col-lg-6"><LiveNetworkActivity /></div>
-            <div className="col-lg-6"><DiskActivityCanvas /></div>
+            <div className="col-lg-5"><h6>Cost by Region</h6><MapTwo /></div>
+            <div className="col-lg-7"><h6>Cost by landscape</h6><TimeLinePiee /></div>
+            <div className="col-lg-6"><h6 style={{ marginTop: "2%" }}>CPU Usage</h6><Canvas /></div>
+            <div className="col-lg-6"><h6 style={{ marginTop: "2%" }}>Memory Usage</h6><MemoryUsageCanvas /></div>
+            <div className="col-lg-6"><h6 style={{ marginTop: "2%" }}>Network Activity</h6><LiveNetworkActivity /></div>
+            <div className="col-lg-6"><h6 style={{ marginTop: "2%" }}>Disk Activity</h6><DiskActivityCanvas /></div>
             {/* <div className="col-lg-6"><MemoryUsage /></div>
         <div className="col-lg-6"><NetworkActivity /></div>
         <div className="col-lg-6"><DiskUsage /></div> */}
@@ -148,9 +148,9 @@ function Sidebar() {
         <img src={wftlogo} style={{ width: "100%" }}></img>
       </div>
       <div className="side-options">
-        <div className="subscriptions">
-          <h5 style={{ textAlign: "left", marginLeft: "8%", marginTop: "-3%" }}>SUBSCRIPTION</h5>
-          <p style={{ textAlign: "left", marginLeft: "12%" }}>WFT-SAP-EA</p>
+        <div className="subscriptions" style={{ marginTop: "10%" }}>
+          <h5 style={{ textAlign: "left", marginLeft: "8%", marginTop: "5%" }}>SUBSCRIPTION</h5>
+          <p style={{ textAlign: "left", marginLeft: "12%", marginTop: "7%" }}>WFT-SAP-EA</p>
         </div>
         <div className="landscapes">
           <h5 style={{ textAlign: "left", marginLeft: "8%", marginTop: "-3%" }}>LANDSCAPES</h5>
@@ -165,52 +165,52 @@ function Sidebar() {
         <div className="virtual-machines">
           <h5 style={{ textAlign: "left", marginLeft: "8%", marginTop: "-3%" }}>VIRTUAL MACHINES</h5>
           <div className="lableClass">
-            <label>
+            <label className="labelClass">
               <input type="checkbox" />
               <span>VM1</span>
             </label>
             <br />
-            <label>
+            <label className="labelClass">
               <input type="checkbox" />
               <span>VM2</span>
             </label>
             <br />
-            <label>
+            <label className="labelClass">
               <input type="checkbox" />
               <span>VM3</span>
             </label>
             <br />
-            <label>
+            <label className="labelClass">
               <input type="checkbox" />
               <span>VM4</span>
             </label>
             <br />
-            <label>
+            <label className="labelClass">
               <input type="checkbox" />
               <span>VM5</span>
             </label>
             <br />
-            <label>
+            <label className="labelClass">
               <input type="checkbox" />
               <span>VM6</span>
             </label>
             <br />
-            <label>
+            <label className="labelClass">
               <input type="checkbox" />
               <span>VM7</span>
             </label>
             <br />
-            <label>
+            <label className="labelClass">
               <input type="checkbox" />
               <span>VM8</span>
             </label>
             <br />
-            <label>
+            <label className="labelClass">
               <input type="checkbox" />
               <span>VM9</span>
             </label>
             <br />
-            <label>
+            <label className="labelClass">
               <input type="checkbox" />
               <span>VM10</span>
             </label>

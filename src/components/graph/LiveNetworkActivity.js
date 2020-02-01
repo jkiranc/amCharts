@@ -55,7 +55,7 @@ export default class Network extends Component {
         series.dataFields.dateX = "date";
         series.dataFields.openValueY = "open";
         series.dataFields.valueY = "close";
-        series.tooltipText = "Received: {openValueY.value} Sent: {valueY.value}";
+        series.tooltipText = "In: {openValueY.value} Out: {valueY.value}";
         series.sequencedInterpolation = true;
         series.fillOpacity = 0.3;
         series.defaultState.transitionDuration = 1000;
@@ -87,7 +87,7 @@ export default class Network extends Component {
 
     render() {
         return (
-            <div id="livenetworkdiv" style={{ width: '100%', height: "320px", backgroundColor: "white", marginTop: "2%", boxShadow: "0px 0px 5px 5px rgba(0, 0, 0, 0.1)" }}>
+            <div id="livenetworkdiv" style={{ width: '100%', height: "270px", backgroundColor: "white", marginTop: "2%", boxShadow: "0px 0px 5px 5px rgba(0, 0, 0, 0.1)" }}>
             </div>
         )
     }

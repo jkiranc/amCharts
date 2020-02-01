@@ -30,7 +30,8 @@ class MemoryUsageCanvas extends Component {
         const options = {
             theme: "light2",
             title: {
-                text: "Memory Usage"
+                text: "Memory Usage",
+                fontSize: 12,
             },
             subtitles: [{
                 text: "Top 10 Vms by % Memory Usage"
