@@ -85,7 +85,7 @@ function App() {
           <div
 
           >
-            <ul style={{ listStyleType: "none", padding: 0, display: "none" }}>
+            <ul style={{ listStyleType: "none", padding: 0, display: "block" }}>
               <li>
                 <Link to="/">Home</Link>
               </li>
