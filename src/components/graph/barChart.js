@@ -52,7 +52,7 @@ export default class BarChart extends Component {
       "visits": 3408
     }];
 
-    
+
     // Create axes
     var categoryAxis = chart.xAxes.push(new am4charts.CategoryAxis());
     categoryAxis.dataFields.category = "country";

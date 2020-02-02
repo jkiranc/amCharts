@@ -149,7 +149,7 @@ export default class Dynamic extends Component {
 
     render() {
         return (
-            <div id="dynamicChart" style={{ width: '100%', height: "270px", backgroundColor: "white", marginTop: "2%", boxShadow: "0px 0px 5px 5px rgba(0, 0, 0, 0.1)" }}>
+            <div id="dynamicChart" style={{ width: '100%', height: "270px", backgroundColor: "white", marginTop: "0%", boxShadow: "0px 0px 5px 5px rgba(0, 0, 0, 0.1)" }}>
             </div>
         )
     }

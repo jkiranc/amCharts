@@ -42,7 +42,25 @@ import alerticon from './images/alert.svg';
 import wftlogo from './images/wftlogo.png';
 
 
-
+const routes = [
+  {
+    path: "/",
+    exact: true,
+    sidebar: () => <div></div>,
+    main: () => <Cost />
+  },
+  {
+    path: "/cost",
+    exact: true,
+    sidebar: () => <div></div>,
+    main: () => <Cost />
+  },
+  {
+    path: "/performance",
+    sidebar: () => <div></div>,
+    main: () => <Performance />
+  }
+];
 function App() {
   return (
     <div className="App">
@@ -62,10 +80,15 @@ function App() {
         </div>
       </div> */}
 
-      {/* <Router>
-        <div>
-          <nav>
-            <ul>
+      <Router>
+        <div >
+          <div
+
+          >
+            <ul style={{ listStyleType: "none", padding: 0, display: "none" }}>
+              <li>
+                <Link to="/">Home</Link>
+              </li>
               <li>
                 <Link to="/cost">Cost</Link>
               </li>
@@ -73,20 +96,29 @@ function App() {
                 <Link to="/performance">Performance</Link>
               </li>
             </ul>
-          </nav>
 
-          <Switch>
-            <Route path="/cost">
-              <Cost />
-            </Route>
-            <Route path="/performance">
-              <Performance />
-            </Route>
-          </Switch>
+
+          </div>
+
+          <div style={{ flex: 1, padding: "0px" }}>
+            <Switch>
+              {routes.map((route, index) => (
+                // Render more <Route>s with the same paths as
+                // above, but different components this time.
+                <Route
+                  key={index}
+                  path={route.path}
+                  exact={route.exact}
+                  children={<route.main />}
+                />
+              ))}
+            </Switch>
+          </div>
         </div>
-      </Router> */}
+      </Router>
 
-      <Performance />
+
+      {/* <Cost /> */}
     </div>
   );
 }
@@ -96,21 +128,31 @@ export default App;
 
 function Cost() {
   return (
-    <div className="row" style={{ padding: "1%", paddingTop: "2%" }} >
-      <div className="col-lg-5">
-        <div className="row" style={{ marginTop: "-5%" }}>
-          <div className="col-lg-12"><DynamicChart /></div>
-          <div className="col-lg-12"><RangeChart /></div>
-          <div className="col-lg-12"><BarChart /></div>
+    <div className="container1">
+      <div className="row" style={{ margin: "0px" }}>
+        <div className="col-lg-2" style={{ paddingLeft: "0px" }}>
+          <Sidebar />
+        </div>
+        <div className="col-lg-10" style={{ padding: "0px" }}>
+          <Navbar />
+          <div className="row" style={{ padding: "1%", margin: "0px" }}>
+            <div className="col-lg-5">
+              <div className="row" style={{ marginTop: "0%" }}>
+                <div className="col-lg-12"><h6>Cost by Region</h6><DynamicChart /></div>
+                <div className="col-lg-12"><h6>Cost by Region</h6><RangeChart /></div>
+                <div className="col-lg-12"><h6>Cost by Region</h6><BarChart /></div>
+              </div>
+            </div>
+            <div className="col-lg-7">
+              <div className="row" style={{ marginTop: "0%" }}>
+                <div className="col-lg-12"><h6>Cost by Region</h6><TimeLinePie /></div>
+                <div className="col-lg-12"><h6>Cost by Region</h6><Sankey /></div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div className="col-lg-7">
-        <div className="row" style={{ marginTop: "-2%" }}>
-          <div className="col-lg-12"><TimeLinePie /></div>
-          <div className="col-lg-12"><Sankey /></div>
-        </div>
-      </div>
-    </div>
+    </div >
   );
 }
 
@@ -148,6 +190,12 @@ function Sidebar() {
         <img src={wftlogo} style={{ width: "100%" }}></img>
       </div>
       <div className="side-options">
+        <div className="pagelinks">
+          <ul style={{ textAlign: "left" }}>
+            <li className="" style={{ listStyleType: "none" }}><a href="/cost" style={{ color: "white", textDecoration: "none" }}>Cost</a></li>
+            <li className="" style={{ listStyleType: "none" }}><a href="/performance" style={{ color: "white", textDecoration: "none" }}>Performance</a></li>
+          </ul>
+        </div>
         <div className="subscriptions" style={{ marginTop: "10%" }}>
           <h5 style={{ textAlign: "left", marginLeft: "8%", marginTop: "5%" }}>SUBSCRIPTION</h5>
           <p style={{ textAlign: "left", marginLeft: "12%", marginTop: "7%" }}>WFT-SAP-EA</p>
@@ -155,6 +203,7 @@ function Sidebar() {
         <div className="landscapes">
           <h5 style={{ textAlign: "left", marginLeft: "8%", marginTop: "-3%" }}>LANDSCAPES</h5>
           <ul>
+            <li className="liClass"></li>
             <li className="liClass">PROD</li>
             <li className="liClass">QAS</li>
             <li className="liClass">STG</li>

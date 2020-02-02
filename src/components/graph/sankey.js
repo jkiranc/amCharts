@@ -166,7 +166,7 @@ export default class Sankey extends Component {
 
     render() {
         return (
-            <div id="sankeydiv" style={{ width: '100%', height: "405px", marginTop: "2%", backgroundColor: "white", boxShadow: "rgba(0, 0, 0, 0.2) 0px 0px 5px 5px" }}>
+            <div id="sankeydiv" style={{ width: '100%', height: "408px", marginTop: "2%", backgroundColor: "white", boxShadow: "rgba(0, 0, 0, 0.2) 0px 0px 5px 5px" }}>
             </div>
         )
     }
