@@ -85,7 +85,7 @@ function App() {
           <div
 
           >
-            <ul style={{ listStyleType: "none", padding: 0, display: "block" }}>
+            <ul style={{ listStyleType: "none", padding: 0, display: "none" }}>
               <li>
                 <Link to="/">Home</Link>
               </li>
@@ -192,9 +192,10 @@ function Sidebar() {
       <div className="side-options">
         <div className="pagelinks">
           <ul style={{ textAlign: "left" }}>
-            <li className="" style={{ listStyleType: "none" }}><a href="/cost" style={{ color: "white", textDecoration: "none" }}>Cost</a></li>
-            <li className="" style={{ listStyleType: "none" }}><a href="/performance" style={{ color: "white", textDecoration: "none" }}>Performance</a></li>
+            <li className="" style={{ listStyleType: "none" }}><Link to="/cost" style={{ color: "white", textDecoration: "none" }}>Cost</Link></li>
+            <li className="" style={{ listStyleType: "none" }}><Link to="/performance" style={{ color: "white", textDecoration: "none" }}>Performance</Link></li>
           </ul>
+
         </div>
         <div className="subscriptions" style={{ marginTop: "10%" }}>
           <h5 style={{ textAlign: "left", marginLeft: "8%", marginTop: "5%" }}>SUBSCRIPTION</h5>
