@@ -185,7 +185,7 @@ function Performance() {
 
 function Sidebar() {
   return (
-    <div style={{ backgroundColor: "#244A90", height: "100vh", color: "white", width: "100%", position: "absolute" }}>
+    <div style={{ backgroundColor: "#244A90", height: "100%", color: "white", width: "100%", position: "absolute" }}>
       <div className="logo">
         <img src={wftlogo} style={{ width: "100%" }}></img>
       </div>
@@ -204,7 +204,6 @@ function Sidebar() {
         <div className="landscapes">
           <h5 style={{ textAlign: "left", marginLeft: "8%", marginTop: "-3%" }}>LANDSCAPES</h5>
           <ul>
-            <li className="liClass"></li>
             <li className="liClass">PROD</li>
             <li className="liClass">QAS</li>
             <li className="liClass">STG</li>
