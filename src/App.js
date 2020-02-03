@@ -138,15 +138,15 @@ function Cost() {
           <div className="row" style={{ padding: "1%", margin: "0px" }}>
             <div className="col-lg-5">
               <div className="row" style={{ marginTop: "0%" }}>
-                <div className="col-lg-12"><h6>Cost by Region</h6><DynamicChart /></div>
-                <div className="col-lg-12"><h6>Cost by Region</h6><RangeChart /></div>
-                <div className="col-lg-12"><h6>Cost by Region</h6><BarChart /></div>
+                <div className="col-lg-12"><h6>Cost by Seconds</h6><DynamicChart /></div>
+                <div className="col-lg-12"><h6>Cost by Date</h6><RangeChart /></div>
+                <div className="col-lg-12"><h6>Cost by Month</h6><BarChart /></div>
               </div>
             </div>
             <div className="col-lg-7">
               <div className="row" style={{ marginTop: "0%" }}>
-                <div className="col-lg-12"><h6>Cost by Region</h6><TimeLinePie /></div>
-                <div className="col-lg-12"><h6>Cost by Region</h6><Sankey /></div>
+                <div className="col-lg-12"><h6>Cost distribution by Storage</h6><TimeLinePie /></div>
+                <div className="col-lg-12" style={{ marginTop: "2.6%" }}><h6>Cost distribution by Service</h6><Sankey /></div>
               </div>
             </div>
           </div>
